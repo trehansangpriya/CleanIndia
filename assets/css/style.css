@@ -26,6 +26,10 @@ nav {
 	z-index: 0;
 }
 
+.navbar-toggler {
+	outline: none !important;
+	border: none !important;
+}
 .intro {
 	background-color: #039bf1;
 	position: fixed;
