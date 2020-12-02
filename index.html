@@ -11,10 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="intro">
+<body data-spy="scroll" data-target=".navbar">
+    <!-- <div class="intro">
         <div class="intro-text">
             <h1 class="hide">
                 <span class="text">Introducing</span>
@@ -27,8 +28,8 @@
                 <span class="text2">Clean India</span>
             </h1>
         </div>
-    </div>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    </div> -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-light" id="navbar">
         <a class="navbar-brand" href="#">Clean India</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,14 +37,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#prototype">Prototype</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#report">Project Report</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#brain">Minds Behind It</a>
                 </li>
             </ul>
         </div>
@@ -56,13 +66,227 @@
             <div class="hero-img">
                 <img src="./assets/images/hero-img.png" alt="">
             </div>
-
+            <a href="#about" class="btn-hero"><span class="material-icons"
+                    style="font-size: 28px;">double_arrow</span></a>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
+        <div class="abt-up" data-aos="fade-up">
+            <div class="abt-heading">About The App</div>
+            <div class="abt-content">
+                <p>“Gamified Swachh Bharat App - Clean India” focuses on creating a win-win situation for the Initiative
+                    by Govt. of India and also the citizens of the Nation.</p>
+                <p>
+                    A Mobile Application that enables a citizen to post a civic related issue which is then forwarded to
+                    the city corporation and also spread awareness about public and personal hygiene, in return the
+                    citizens receive points which can be redeemed at any local store/vendor.
+                </p>
+            </div>
+        </div>
+        <div class="abt-dwn" data-aos="fade-up">
+            <div class="abt-imgs">
+                <img src="./assets/images/abt-img.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <div class="f-head" data-aos="fade-up">
+            Features
+        </div>
+        <div class="feature" data-aos="fade-up">
+            <div class="f-up">
+                <div class="f-heading">Daily Bonus</div>
+                <div class="f-content">
+                    The Daily Bonus Feature lets you snap a picture of the user taking out the trash or segregating Wet
+                    and Dry waste or any hygienic activity, in their house or their surroundings and upload it to our
+                    servers using the Clean India App.
+                    <br><br>
+                    Our Machine Learning Model Recognizes the Image and award Points to the User which can be later
+                    Redeemed.
+                </div>
+            </div>
+            <div class="f-down">
+                <img src="./assets/images/f-bonus.png" alt="">
+            </div>
+        </div>
+        <div class="feature" data-aos="fade-up">
+            <div class="f-up">
+                <div class="f-heading">Your Feed</div>
+                <div class="f-content">
+                    Your Feed Section is a Social Media Platform for all the users where they can engage with the Online
+                    Community of the App, Like, Share and Comment on each others’ updates.
+                    <br><br>
+                    And also Share their Achievements, Prizes, Points earned in the App, along with beneficial Posts
+                    that are good for the Community can also be posted. The content will be monitored by a strict AI
+                    Model.
+                </div>
+            </div>
+            <div class="f-down">
+                <img src="./assets/images/f-feed.png" alt="">
+            </div>
+        </div>
+        <div class="feature" data-aos="fade-up">
+            <div class="f-up">
+                <div class="f-heading">Redeem Points</div>
+                <div class="f-content">
+                    Redeem Section is used to redeem points that a user gains/earns in the App at the local
+                    Stores/Vendors in his/her city. <br><br>
+                    The Points will have a distinctive conversion System which will be followed by the User and the
+                    Local Vendors as well.
+                    The proposed Conversion rate for now is 100 Pts = ₹10
+                </div>
+            </div>
+            <div class="f-down">
+                <img src="./assets/images/f-redeem.png" alt="">
+            </div>
+        </div>
+        <div class="feature" data-aos="fade-up">
+            <div class="f-up">
+                <div class="f-heading">Report an Issue</div>
+                <div class="f-content">
+                    Report Section is used by the users to report any activity to the Authorities via the App, by
+                    uploading a photo of the issue and along with it a message describing the issue. <br><br>
+                    The Location of the user and issue is taken byt he App using the Geolocation API and is forwarded to
+                    the Authorities using End to End Encryption, keeping the user’s information safe at all times.
+                    The Authoroties can then take action on the issue raised by the user.
+                </div>
+            </div>
+            <div class="f-down">
+                <img src="./assets/images/f-report.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="prototype" id="prototype">
+        <div class="p-heading">Prototype</div>
+        <div class="embed" data-aos="fade-up">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="550"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYwjB9wrMKwdQ63A7Wa4MRW%2FClean-India%3Fnode-id%3D111%253A36%26viewport%3D330%252C427%252C0.4541388750076294%26scaling%3Dscale-down"
+                allowfullscreen></iframe>
+        </div>
 
     </section>
+    <section class="report" id="report">
+        <div class="r-heading">
+            Files
+        </div>
+        <div class="r-content" data-aos="fade-up">
+            <div class="r-up r">
+                <a href="#" class="card-link">
+                    <div class="c">
+                        <div class="c-icon">
+                            <img src="https://www.flaticon.com/svg/static/icons/svg/337/337946.svg" alt="">
+                        </div>
+                        <div class="c-title">Project Report</div>
+                    </div>
+                </a>
+            </div>
+            <div class="r-down r">
+                <a href="#" class="card-link">
+                    <div class="c">
+                        <div class="c-icon">
+                            <img src="https://www.flaticon.com/svg/static/icons/svg/337/337949.svg" alt="">
+                        </div>
+                        <div class="c-title">Presentation</div>
+                    </div>
+                </a>
+            </div>
+        </div>
 
+    </section>
+    <section class="brain" id="brain">
+        <div class="b-heading" data-aos="fade-up">
+            Minds Behind It
+        </div>
+        <div class="video" data-aos="fade-up">
+            <video src="assets/images/team/Brainstorming.mp4" controls="true" muted="true"></video>
+        </div>
+        <div class="team" data-aos="fade-up">
+            <div class="t-c">
+                <div class="t-c-img">
+                    <img src="assets/images/team/trehan.jpg" alt="">
+                </div>
+                <div class="t-c-h">
+                    Trehan
+                </div>
+            </div>
+            <div class="t-c">
+                <div class="t-c-img">
+                    <img src="assets/images/team/trehan.jpg" alt="">
+                </div>
+                <div class="t-c-h">
+                    Veeresh
+                </div>
+            </div>
+            <div class="t-c">
+                <div class="t-c-img">
+                    <img src="assets/images/team/trehan.jpg" alt="">
+                </div>
+                <div class="t-c-h">
+                    Keerthi
+                </div>
+            </div>
+            <div class="t-c">
+                <div class="t-c-img">
+                    <img src="assets/images/team/trehan.jpg" alt="">
+                </div>
+                <div class="t-c-h">
+                    Mahitha
+                </div>
+            </div>
+            <div class="t-c">
+                <div class="t-c-img">
+                    <img src="assets/images/team/trehan.jpg" alt="">
+                </div>
+                <div class="t-c-h">
+                    Jithendra
+                </div>
+            </div>
+            <div class="t-c">
+                <div class="t-c-img">
+                    <img src="assets/images/team/trehan.jpg" alt="">
+                </div>
+                <div class="t-c-h">
+                    Vaibhav
+                </div>
+            </div>
+            <div class="t-c">
+                <div class="t-c-img">
+                    <img src="assets/images/team/trehan.jpg" alt="">
+                </div>
+                <div class="t-c-h">
+                    Varun
+                </div>
+            </div>
+            <div class="t-c">
+                <div class="t-c-img">
+                    <img src="assets/images/team/trehan.jpg" alt="">
+                </div>
+                <div class="t-c-h">
+                    Usharani
+                </div>
+            </div>
+            <div class="t-c">
+                <div class="t-c-img">
+                    <img src="assets/images/team/trehan.jpg" alt="">
+                </div>
+                <div class="t-c-h">
+                    Sai
+                </div>
+            </div>
+            <div class="t-c">
+                <div class="t-c-img">
+                    <img src="assets/images/team/trehan.jpg" alt="">
+                </div>
+                <div class="t-c-h">
+                    Supriya
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Designed and Developed with ❤ by &nbsp;<a target="_blank" href="https://linkedin.com/in/trehansangpriya">Trehan
+            Sangpriya</a>
+    </footer>
 
 
 
@@ -76,7 +300,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
